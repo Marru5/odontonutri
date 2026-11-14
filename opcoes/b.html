@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Opção B | Odontonutri</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700&display=swap">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #101010; color: #fff; font: 400 18px/1.5 "Barlow", sans-serif; }
+  img { display: block; max-width: 100%; }
+  a { color: inherit; }
+  p, h1, h2, h3, ul { margin: 0; padding: 0; list-style: none; }
+  :root { --lado: max(28px, calc((100vw - 1320px) / 2)); }
+
+  .cab { display: flex; align-items: center; gap: 36px; height: 84px; padding: 0 var(--lado); border-bottom: 2px solid #D4AE55; }
+  .cab img { height: 54px; width: auto; }
+  .cab nav { margin-left: auto; display: flex; gap: 30px; font: 600 19px "Barlow Condensed", sans-serif; letter-spacing: 0.02em; }
+  .cab nav a { text-decoration: none; }
+  .cab nav a:hover { color: #D4AE55; }
+
+  .hero { display: grid; grid-template-columns: 1.3fr 1fr; min-height: calc(100vh - 84px); }
+  .esq { display: flex; flex-direction: column; justify-content: flex-end; padding: 56px 56px 60px var(--lado); }
+  h1 { font: 700 clamp(62px, 8.6vw, 132px)/0.94 "Barlow Condensed", sans-serif; margin-bottom: 28px; }
+  .esq p { max-width: 32em; color: #CFCFCF; margin-bottom: 30px; font-size: 20px; }
+  .btn { align-self: flex-start; display: inline-block; padding: 18px 34px; background: #D4AE55; color: #101010; font: 700 22px "Barlow Condensed", sans-serif; text-decoration: none; }
+  .btn:hover { background: #fff; }
+
+  .dir { background: #D4AE55; color: #101010; padding: 44px var(--lado) 40px 48px; display: flex; flex-direction: column; }
+  .dir h2 { font: 700 34px/1 "Barlow Condensed", sans-serif; margin-bottom: 18px; }
+  .p { display: grid; grid-template-columns: 76px 1fr; gap: 16px; align-items: center; padding: 11px 0; border-top: 2px solid #101010; }
+  .p img { width: 76px; height: 76px; object-fit: cover; }
+  .p b { display: block; font-weight: 600; font-size: 19px; line-height: 1.2; }
+  .p span { display: block; font-size: 16px; line-height: 1.25; }
+  .hoje { margin-top: auto; padding-top: 18px; border-top: 2px solid #101010; font: 600 22px/1.2 "Barlow Condensed", sans-serif; display: flex; justify-content: space-between; gap: 16px; }
+
+  .trat { padding: 72px var(--lado); }
+  .trat h2 { font: 700 60px/1 "Barlow Condensed", sans-serif; margin-bottom: 34px; }
+  .lista { display: grid; grid-template-columns: 1fr 1fr; column-gap: 64px; }
+  .lista a { display: flex; justify-content: space-between; gap: 20px; align-items: baseline; padding: 16px 0; border-top: 1px solid #3A3A3A; text-decoration: none; font: 600 32px/1.1 "Barlow Condensed", sans-serif; }
+  .lista a:hover { color: #D4AE55; }
+  .lista span { font: 400 16px/1.2 "Barlow", sans-serif; color: #AFAFAF; text-align: right; }
+
+  .exames { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; background: #D4AE55; border-top: 2px solid #D4AE55; }
+  .exames > div { background: #101010; padding: 40px var(--lado); display: grid; grid-template-columns: 150px 1fr; gap: 28px; align-items: center; }
+  .exames > div:last-child { padding-left: 40px; }
+  .exames > div:first-child { padding-right: 40px; }
+  .exames img { width: 150px; height: 190px; object-fit: cover; }
+  .exames h3 { font: 700 34px/1 "Barlow Condensed", sans-serif; margin-bottom: 10px; color: #D4AE55; }
+  .exames p { font-size: 17px; color: #D8D8D8; }
+
+  @media (max-width: 900px) {
+    .cab nav { display: none; }
+    .hero, .lista, .exames { grid-template-columns: 1fr; }
+    .esq { padding: 44px 28px 40px; }
+    h1 { font-size: 66px; }
+    .dir { padding: 32px 28px; }
+    .lista a { font-size: 27px; }
+    .exames > div, .exames > div:last-child, .exames > div:first-child { padding: 32px 28px; grid-template-columns: 110px 1fr; }
+    .exames img { width: 110px; height: 150px; }
+  }
+</style>
+</head>
+<body>
+<header class="cab">
+  <img src="../img/logo.png" alt="Odontonutri">
+  <nav><a href="#">Tratamentos</a><a href="#">Exames</a><a href="#">Nutrição</a><a href="#">Equipe</a><a href="#">Como chegar</a></nav>
+</header>
+
+<main class="hero">
+  <div class="esq">
+    <h1>Dentista e nutricionista em Humaitá</h1>
+    <p>Do check-up ao implante, com tomógrafo 3D e avaliação corporal InBody na própria clínica.</p>
+    <a class="btn" href="#">Agendar pelo WhatsApp</a>
+  </div>
+  <aside class="dir">
+    <h2>Quem atende</h2>
+    <div class="p"><img src="../img/rosto-helio.webp" alt=""><div><b>Dr. Hélio Cesar</b><span>Ortodontia e implantes</span></div></div>
+    <div class="p"><img src="../img/rosto-junior.webp" alt=""><div><b>Dr. Júnior Toledo</b><span>Clínica geral, canal e sisos</span></div></div>
+    <div class="p"><img src="../img/rosto-liliana.webp" alt=""><div><b>Dra. Liliana R. Garamendy</b><span>Clareamento, próteses e implantes</span></div></div>
+    <div class="p"><img src="../img/rosto-caroline.webp" alt=""><div><b>Dra. Caroline Façanha</b><span>Facetas e clareamento</span></div></div>
+    <div class="p"><img src="../img/rosto-jane.webp" alt=""><div><b>Jane Duarte</b><span>Nutricionista</span></div></div>
+    <div class="hoje"><span>Seg a sex 8h–18h · Sáb 8h–12h</span><span>(97) 98454-8379</span></div>
+  </aside>
+</main>
+
+<section class="trat">
+  <h2>Tratamentos</h2>
+  <div class="lista">
+    <a href="#">Clínica geral e limpeza<span>Avaliação e prevenção</span></a>
+    <a href="#">Canal<span>Tratamento endodôntico</span></a>
+    <a href="#">Restaurações<span>Dente cariado ou quebrado</span></a>
+    <a href="#">Extrações e sisos<span>Simples e complexos</span></a>
+    <a href="#">Clareamento<span>Dentes mais claros</span></a>
+    <a href="#">Implantes e próteses<span>Reposição de dentes</span></a>
+    <a href="#">Facetas<span>Resina ou cerâmica</span></a>
+    <a href="#">Ortodontia<span>Aparelho e alinhamento</span></a>
+    <a href="#">Odontopediatria<span>Atendimento infantil</span></a>
+    <a href="#">Pacientes atípicos<span>Avaliação especial</span></a>
+  </div>
+</section>
+
+<section class="exames">
+  <div><img src="../img/tomografo.webp" alt="" style="object-position:40% 20%"><div><h3>Tomógrafo 3D</h3><p>Imagens tridimensionais dos dentes e dos ossos da face para diagnóstico e planejamento.</p></div></div>
+  <div><img src="../img/inbody.webp" alt="" style="object-position:50% 6%"><div><h3>InBody 570</h3><p>Gordura corporal, massa muscular e água no organismo, por regiões do corpo.</p></div></div>
+</section>
+</body>
+</html>
